@@ -68,7 +68,7 @@ size = 60
 create_game(size, True)
 engine.notify("You are invisible to enemies")
 while engine.working:
-    clock.tick(10)
+    clock.tick(15)
 
 
     if KEYBOARD_CONTROL:

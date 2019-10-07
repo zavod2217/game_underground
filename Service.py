@@ -364,6 +364,6 @@ def service_init(sprite_size, full=True, engine=None):
 
     if full:
         file = open("levels.yml", "r")
-        level_list = yaml.load(file.read())['levels']
+        level_list = yaml.load(file.read(), Loader=yaml.Loader)['levels']
         level_list.append({'map': EndMap.Map(), 'obj': EndMap.Objects()})
         file.close()
